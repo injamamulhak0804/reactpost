@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #5cdb95;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.header {
+  color: #242582;
+}
+.nav-bar {
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  color: #242582;
+  font-family: "Rubik", sans-serif;
+  padding: 0px 30px;
+}
+.list-link {
+  display: flex;
+  list-style: none;
+  column-gap: 25px;
+}
+.link a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 15px;
+  padding: 5px 10px;
+  color: #242582;
+  border-radius: 2px;
+}
+.search {
+  margin-left: 15px;
+  font-family: "Rubik", sans-serif;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #242582;
+  font-size: 0.9rem;
+  color: #edf5e1;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.search:focus {
+  outline: none;
+}
+.link a:hover {
+  background-color: #242582;
+  color: #eee;
+  transition: 0.88s;
+}
+.post:first-child {
+  margin-top: 50px;
+}
+.post {
+  user-select: none;
+  background: rgba(255, 255, 255, 0.678);
+  border-bottom: 1px solid grey;
+  color: rgb(5, 57, 107);
+  display: flex;
+  justify-content: center;
+}
+.post h2 {
+  text-transform: capitalize;
+  padding-bottom: 5px;
+}
+.postdate {
+  font-size: 12px;
+  text-decoration: none !important;
+}
+.postbody {
+  padding: 20px 0px;
+}
+.posttext {
+  text-align: start;
+  width: 30%;
+  padding-top: 10px;
+}
+.no-post {
+  text-align: center;
+  margin: 50px 0px;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 80vh;
+  font-weight: 500;
+  font-family: "Rubik";
+  display: grid;
+  place-content: center;
+}
+.posttext a {
+  text-decoration: none;
+  color: black;
+}
+.error-page {
+  margin-top: 80px;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  line-height: 60px;
+}
+.post-text-full {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  place-content: center;
+  justify-content: center;
+}
+.btnDelte{
+  padding: 10px 35px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  border: none;
+  margin-top: 20px;
+}
+.btnLink {
+  padding: 10px 75px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  border: none;
+  margin-top: 20px;
+}
+.btnDelte:focus,
+.btnDelte:hover,
+.btnLink:focus,
+.btnLink:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+  cursor: pointer;
+}
+.loading {
+  font-size: 22px;
+  display: grid;
+  place-content: center;
+  height: 90vh;
+}
+.error {
+  font-size: 22px;
+  display: grid;
+  place-content: center;
+  height: 90vh;
+  color: rgb(110, 39, 39);
+}
+.btn-lg {
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  border: none;
+  margin-top: 20px;
+}
+.edit-header{
+  text-align: center;
+  margin: 30px;
+}
