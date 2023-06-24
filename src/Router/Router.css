@@ -20,30 +20,6 @@ code {
 .header {
   color: #242582;
 }
-.nav-bar {
-  color: white;
-  font-size: 15px;
-  display: flex;
-  justify-content: space-between;
-  height: 40px;
-  align-items: center;
-  color: #242582;
-  font-family: "Rubik", sans-serif;
-  padding: 0px 30px;
-}
-.list-link {
-  display: flex;
-  list-style: none;
-  column-gap: 25px;
-}
-.link a {
-  text-decoration: none;
-  color: aliceblue;
-  font-size: 15px;
-  padding: 5px 10px;
-  color: #242582;
-  border-radius: 2px;
-}
 .search {
   margin-left: 15px;
   font-family: "Rubik", sans-serif;
@@ -58,13 +34,9 @@ code {
 .search:focus {
   outline: none;
 }
-.link a:hover {
-  background-color: #242582;
-  color: #eee;
-  transition: 0.88s;
-}
+
 .post:first-child {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .post {
   user-select: none;
@@ -73,6 +45,8 @@ code {
   color: rgb(5, 57, 107);
   display: flex;
   justify-content: center;
+  width: 90%;
+  margin: 0 auto;
 }
 .post h2 {
   text-transform: capitalize;
@@ -119,7 +93,7 @@ code {
   place-content: center;
   justify-content: center;
 }
-.btnDelte{
+.btnDelte {
   padding: 10px 35px;
   border-radius: 5px;
   background-color: blue;
@@ -171,7 +145,141 @@ code {
   border: none;
   margin-top: 20px;
 }
-.edit-header{
+.edit-header {
   text-align: center;
   margin: 30px;
+}
+
+/* link */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.header button {
+  width: 50px;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: blanchedalmond;
+}
+
+.links {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  height: 100vh;
+  width: 250px;
+  background-color: white;
+}
+
+.link {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.link a {
+  width: 100%;
+  padding: 12px 15px;
+  text-decoration: none;
+}
+
+.link:hover,
+.link.active {
+  color: red;
+  background-color: #eee;
+}
+
+.links {
+  transform: translateX(-250px);
+  transition: 0.5s;
+}
+
+.content {
+  padding: 15px;
+}
+
+.open .links {
+  transform: translateX(0);
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.open .nav-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sub-header {
+  font-size: 2rem;
+  margin: 90px 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.about {
+  width: 60%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.about-text{
+  font-size: 1.1rem;
+  text-indent: 50px;
+  line-height: 35px;
+}
+.about-heading{
+  font-weight: bold;
+  margin: 100px 50px;
 }

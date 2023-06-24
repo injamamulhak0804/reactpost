@@ -70,13 +70,6 @@ textarea {
   font-variant: small-caps;
   font-size: 0.9rem;
 }
-.sub-header {
-  font-size: 2rem;
-  margin: 50px 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: center;
-}
 .footer {
   position: absolute;
   bottom: 0;
@@ -84,24 +77,6 @@ textarea {
   background-color: #242582;
   width: 100vw;
   color: aliceblue;
-}
-.about {
-  width: 60%;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.about-text{
-  font-size: 1.1rem;
-  text-indent: 50px;
-  line-height: 35px;
-}
-.about-heading{
-  font-weight: bold;
-  margin: 50px;
 }
 Link h2,
 p {

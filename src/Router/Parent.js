@@ -40,8 +40,6 @@ const Parent = () => {
   // search 
 
   useEffect(() => {
-    // const data = JSON.parse(localStorage.getItem("to_do_list"))
-    // setPosts(data)
   const FilterResult = posts.filter((post) =>
     (post.body).toLowerCase().includes(search.toLowerCase()) ||
     (post.title).toLowerCase().includes(search.toLowerCase())
